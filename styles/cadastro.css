@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: poppinsregular;
+    background-color: rgb(34, 34, 34);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+    color: white;
+    text-shadow: 3px 0 9px black;
+    margin-right: 200px;
+}
+
+.gengar {
+    flex-direction: column;
+    width: 90px;
+    filter: drop-shadow(5px 0 5px rgb(10, 10, 10));
+    margin-top: 14px;
+    padding-right: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 255);
+    transition: 0.5s all;
+}
+
+#signup {
+    border: 2px solid rgb(255, 0, 255);
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#signup:hover{
+    background-color: rgb(255, 0, 255);
+    color: white;
+}
+
+h1 {
+    font-weight: 180;
+}
+
+.main-login-midnight {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side1 {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side1 > h1 {
+    font-size: 2vw;
+    color: rgb(253, 253, 253);
+    text-shadow: 0px 3px 40px #000000cb;
+    font-family: poppinsbold;
+}
+
+.side1 > h1 > span {
+    color: rgb(255, 0, 255);
+    text-shadow: 2px 0 9px rgb(75, 0, 110);
+}
+
+
+.animate-logo {
+    position: relative;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 105px;
+}
+
+
+.side2 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 140px;
+}
+
+
+.login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 35px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 25px;
+    box-shadow: 0px 12px 40px #000000cb;
+}
+
+.login > h1 {
+    color: rgb(255, 0, 255);
+    font-weight: 750;
+    margin: 0;  
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.text > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #41457a;
+    color: #fffbff;
+    font-size: 13pt;
+    box-shadow: 0px 3px 40px #000000cb;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text > label {
+    color: #fac4ff;
+    margin-bottom: 10px;
+}
+
+.text > input::placeholder {
+    color: #fac4ff;
+}
+
+.button-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 30px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #212570;
+    background-color: #a535bb;
+    cursor: pointer;
+    box-shadow: 0px 9px 40px -11px #6f007e;
+}
+
+
+@media only screen and (max-width: 950px){
+    .login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .side1 > h1 {
+        display: none;
+    }
+    .side1{
+        width: 100px;
+        height: auto;
+    }
+}
+

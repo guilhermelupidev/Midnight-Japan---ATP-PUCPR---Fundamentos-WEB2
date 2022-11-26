@@ -1,0 +1,805 @@
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+    text-shadow: 3px 0 9px black;
+    margin-right: 150px;
+}
+
+.gengar {
+    flex-direction: column;
+    width: 90px;
+    filter: drop-shadow(5px 0 5px rgb(10, 10, 10));
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 255);
+    transition: 0.5s all;
+}
+
+#signup {
+    border: 2px solid rgb(255, 0, 255);
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#signup:hover{
+    background-color: rgb(255, 0, 255);
+    color: white;
+}
+
+h1 {
+    font-weight: 180;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    font-family: poppinsbold;
+}
+.product {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product::after {
+    content: 'Jujutsu Kaisen';
+    position: absolute;
+    margin-left: 2px;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 2.5em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product .mangaIcon img {
+    max-width: 106%;
+    transition: 0.5s;
+}
+
+.product:hover .mangaIcon img{
+    max-width: 75%;
+}
+
+.product .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.product2 {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product2::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product2:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product2::after {
+    content: 'Tokyo Revengers';
+    position: absolute;
+    margin-left: 3px;
+    bottom: 0;
+    left: 0;
+    font-weight: 500;
+    font-size: 2.1em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product2 .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product2 .mangaIcon img {
+    max-width: 145%;
+    transition: 0.5s;
+}
+
+.product2:hover .mangaIcon img{
+    max-width: 104%;
+}
+
+.product2 .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product2 .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product2 .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product2 .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product2:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.product3 {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product3::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product3:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product3::after {
+    content: 'Chainsaw Man';
+    position: absolute;
+    margin-left: 2px;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 2.1em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product3 .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product3 .mangaIcon img {
+    max-width: 84%;
+    transition: 0.5s;
+}
+
+.product3:hover .mangaIcon img{
+    max-width: 58%;
+}
+
+.product3 .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product3 .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product3 .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product3 .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product3:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    font-family: poppinsbold; 
+}
+
+.product4 {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product4::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product4:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product4::after {
+    content: 'Spy X Family';
+    position: absolute;
+    margin-left: 2px;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 2.1em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product4 .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product4 .mangaIcon img {
+    max-width: 53%;
+    transition: 0.5s;
+}
+
+.product4:hover .mangaIcon img{
+    max-width: 39%;
+}
+
+.product4 .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product4 .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product4 .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product4 .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product4:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.product5 {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product5::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product5:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product5::after {
+    content: 'Attack on Titan';
+    position: absolute;
+    margin-left: 2px;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 2.1em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product5 .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product5 .mangaIcon img {
+    max-width: 53%;
+    transition: 0.5s;
+}
+
+.product5:hover .mangaIcon img{
+    max-width: 39%;
+}
+
+.product5 .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product5 .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product5 .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product5 .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product5:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.product6 {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product6::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product6:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product6::after {
+    content: 'Boku no Hero';
+    position: absolute;
+    margin-left: 2px;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 2.1em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product6 .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product6 .mangaIcon img {
+    max-width: 56%;
+    transition: 0.5s;
+}
+
+.product6:hover .mangaIcon img{
+    max-width: 41%;
+}
+
+.product6 .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product6 .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product6 .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product6 .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product6:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.product7 {
+    position: relative;
+    width: 190px;
+    height: 290px;
+    background-color: rgb(46, 32, 58);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product7::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 78, 165);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.product7:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.product7::after {
+    content: 'Naruto Shippuden';
+    position: absolute;
+    margin-left: 3px;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 2em;
+    color: rgba(77, 53, 83, 0.322);
+}
+
+.product7 .mangaIcon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    filter: drop-shadow(1px 0 7px black);
+}
+
+.product7 .mangaIcon img {
+    max-width: 56%;
+    transition: 0.5s;
+}
+
+.product7:hover .mangaIcon img{
+    max-width: 40%;
+}
+
+.product7 .mangaTxt {
+    position: relative;
+    font-family: poppinsregular;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.product7 .mangaTxt h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product7 .mangaTxt .dispon {
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product7 .mangaTxt .emprest {
+    position: relative;
+    padding: 1px 15px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0 5px rgb(22, 22, 22);
+    background: rgb(170, 78, 165);
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 1px 0 5px rgb(22, 22, 22);
+}
+
+.product7:hover .mangaTxt .emprest {
+    top: 0px;
+    opacity: 1;
+}

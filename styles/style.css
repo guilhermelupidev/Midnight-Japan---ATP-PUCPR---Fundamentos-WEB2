@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+    text-shadow: 3px 0 9px black;
+    margin-right: 150px;
+}
+
+.gengar {
+    flex-direction: column;
+    width: 90px;
+    filter: drop-shadow(5px 0 5px rgb(10, 10, 10));
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 255);
+    transition: 0.5s all;
+}
+
+#signup {
+    border: 2px solid rgb(255, 0, 255);
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#signup:hover{
+    background-color: rgb(255, 0, 255);
+    color: white;
+}
+
+h1 {
+    font-weight: 180;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsbold;
+    text-shadow: 1px 0 1px white;
+}
+
+span {
+    color: rgb(255, 0, 255);
+    text-shadow: 2px 0 9px rgb(75, 0, 110);
+    
+}
+
+p {
+    line-height: 22px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+.midoriya {
+    width: 600px;
+    filter: drop-shadow(5px 0 5px rgb(248, 31, 255));
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+input {
+    margin-top: 10px;
+    height: 20px;
+    padding: 12px;
+    border-radius: 19px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    font-weight: bold;
+    background-color: rgb(34, 34, 34);;
+    border: 2px solid rgb(255, 0, 255);
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 1px 1px 10px black;
+}
+
+form [type="submit"]:hover {
+    background-color: rgb(255, 0, 255);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all;
+}
