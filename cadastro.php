@@ -53,7 +53,7 @@
                     </div>
                     <button class="button-login">Registrar</button>
                     <div class="text">
-                        <a href="./login.html" class="account">Já tenho uma conta!</a>
+                        <a href="./login.php" class="account">Já tenho uma conta!</a>
                     </div>
                 </div>
             </form>

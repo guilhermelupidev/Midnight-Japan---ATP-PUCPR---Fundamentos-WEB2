@@ -9,33 +9,33 @@
     <link rel="stylesheet" href="./styles/cadastro.css">
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
-<body>
-<?php
-    include_once('header.php');
-?>
+    <body>
+    <?php
+        include_once('header.php');
+    ?>
 
-    <div class="main-login-midnight">
-        <div class="side1">
-            <h1>Cadastre-se na plataforma<br><span>e desfrute de nosso imenso catálogo!</span></h1>
-            <img src="./all/images/dragon-animate.svg" class="animate-logo" alt="">
-        </div>
-        <div class="side2">
-            <form action="" class="login">
-                <div class="login">
-                    <h1>Entrar</h1>
-                    <div class="text">
-                        <label for="user">Email</label>
-                        <input type="text" name="user" placeholder="Insira seu email">
+        <div class="main-login-midnight">
+            <div class="side1">
+                <h1>Cadastre-se na plataforma<br><span>e desfrute de nosso imenso catálogo!</span></h1>
+                <img src="./all/images/dragon-animate.svg" class="animate-logo" alt="">
+            </div>
+            <div class="side2">
+                <form action="" class="login">
+                    <div class="login">
+                        <h1>Entrar</h1>
+                        <div class="text">
+                            <label for="user">Email</label>
+                            <input type="text" name="user" placeholder="Insira seu email">
+                        </div>
+                        <div class="text">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" placeholder="Insira sua senha">
+                        </div>
+                        <button class="button-login">Logar</button>
                     </div>
-                    <div class="text">
-                        <label for="password">Senha</label>
-                        <input type="password" name="password" placeholder="Insira sua senha">
-                    </div>
-                    <button class="button-login">Logar</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    
-</body>
+        
+    </body>
 </html>
