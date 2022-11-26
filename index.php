@@ -21,10 +21,10 @@
             <p>
                 Estamos com vagas abertas para o time da Midnight, caso tenha interesse, preencha os campos abaixo e aguarde o nosso retorno!
             </p>
-            <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="submit" value="Enviar! :D">
+            <form method="post" action="cadastroCurriculo.php">
+                <input type="text" name="nomeCurriculo" placeholder="Nome">
+                <input type="email" name="emailCurriculo" placeholder="Email">
+                <input type="submit" value="Enviar! :D" name="submit">
             </form>
         </aside>
         <article>
