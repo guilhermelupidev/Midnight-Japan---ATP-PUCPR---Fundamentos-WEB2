@@ -24,8 +24,8 @@
                 <div class="login">
                     <h1>Entrar</h1>
                     <div class="text">
-                        <label for="user">Email</label>
-                        <input type="text" name="email" placeholder="Insira seu email">
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" placeholder="Insira seu email">
                     </div>
                     <div class="text">
                         <label for="password">Senha</label>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="text">
                         <label for="user">Data de Nascimento</label>
-                        <input type="date" name="datanascimento" placeholder="Data de Nascimento">
+                        <input type="date" name="dataNascimento" placeholder="Data de Nascimento">
                     </div>
                     <button type="submit" name="submit" class="button-login">Registrar</button>
                     <div class="text">

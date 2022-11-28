@@ -1,12 +1,14 @@
 <?php
-        $conn = mysqli_connect("localhost", "root","", "atpMidnight");
-        if($conn == false){
-            die("Erro ao conectar com o DB ");
-        } 
+    include "conectaDB.php";
+
         $email = $_POST["emailCurriculo"];
         $nome = $_POST["nomeCurriculo"];
 
         $sql = "INSERT INTO cadastroCurriculo(nome, email) VALUES('$nome','$email')";
-        mysqli_query($conn, $sql);
-        header("Location: index.php");
+        $res = mysqli_query($conn, $sql);
+        if($res){
+            header("Location: index.php");
+        }else{
+            die("Erro ao conectar com o DB ");
+        }
 ?>

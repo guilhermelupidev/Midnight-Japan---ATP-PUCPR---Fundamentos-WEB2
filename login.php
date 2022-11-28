@@ -24,12 +24,12 @@
                     <div class="login">
                         <h1>Entrar</h1>
                         <div class="text">
-                            <label for="user">Email</label>
-                            <input type="text" name="user" placeholder="Insira seu email">
+                            <label for="user">Usuario</label>
+                            <input type="text" name="login" placeholder="Insira seu email">
                         </div>
                         <div class="text">
                             <label for="password">Senha</label>
-                            <input type="password" name="password" placeholder="Insira sua senha">
+                            <input type="password" name="senha" placeholder="Insira sua senha">
                         </div>
                         <button type="submit" name="submit" class="button-login">Logar</button>
                     </div>
