@@ -30,6 +30,12 @@
                         <div class="text">
                             <label for="password">Senha</label>
                             <input type="password" name="senha" placeholder="Insira sua senha">
+                            <?php
+                            if(isset($_GET["erro"])){
+                                echo '<p style="text-align:center;color:red">Usuario e/ou senha incorreto.</p>';
+                            }
+
+                        ?>
                         </div>
                         <button type="submit" name="submit" class="button-login">Logar</button>
                     </div>
