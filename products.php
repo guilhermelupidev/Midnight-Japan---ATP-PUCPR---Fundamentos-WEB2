@@ -23,14 +23,25 @@
             $row = mysqli_fetch_assoc($res);
             $qtd = $row["qtd"];
             $local = $row["local"];
+            $id = $row["id"];
             echo  
             '<div class="product">
                 <div class="mangaIcon">
                     <img src='.$local.' alt="oh-oh">
+                    <h2 class="dispon">Quantidade '.$qtd.'</h2>
+
                 </div>
                 <div class="mangaTxt">
-                    <h2 class="dispon">Disponivel</h2>
-                    <a href="#" class="emprest">Emprestar</a>
+                    <h2 class="dispon">
+                        <form method="post" action="emprestaProduto.php" >
+                            <input type="submit" name='.$id.'
+                                  value="Emprestar"  class="emprest"  />
+                        </form>
+                        <form method="post" action="devolveProduto.php" >   
+                            <input type="submit" name='.$id.'
+                                    class="emprest" value="Devolver" />
+                        </form> 
+                    </h2>                    
                 </div>
             </div>';
         }
@@ -39,6 +50,7 @@
         
       
     </main>
+
 
    
 </body>
