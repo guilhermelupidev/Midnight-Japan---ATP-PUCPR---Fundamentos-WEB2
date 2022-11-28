@@ -20,7 +20,7 @@
                 <img src="./all/images/dragon-animate.svg" class="animate-logo" alt="">
             </div>
             <div class="side2">
-                <form action="" class="login">
+                <form method="post" action="validaLogin.php" class="login">
                     <div class="login">
                         <h1>Entrar</h1>
                         <div class="text">
@@ -31,7 +31,7 @@
                             <label for="password">Senha</label>
                             <input type="password" name="password" placeholder="Insira sua senha">
                         </div>
-                        <button class="button-login">Logar</button>
+                        <button type="submit" name="submit" class="button-login">Logar</button>
                     </div>
                 </form>
             </div>

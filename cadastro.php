@@ -1,15 +1,3 @@
-<?php
-
-    if(isset($_POST['button-login']))
-    {
-        print_r($_POST['email']);
-        print_r($_POST['senha']);
-        print_r($_POST['nome']);
-        print_r($_POST['datanascimento']);
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +20,7 @@
             <img src="./all/images/dragon-animate.svg" class="animate-logo" alt="">
         </div>
         <div class="side2">
-            <form action="cadastro.php" method="POST" class="login">
+            <form action="novoUsuario.php" method="post" class="login">
                 <div class="login">
                     <h1>Entrar</h1>
                     <div class="text">
@@ -51,7 +39,7 @@
                         <label for="user">Data de Nascimento</label>
                         <input type="date" name="datanascimento" placeholder="Data de Nascimento">
                     </div>
-                    <button class="button-login">Registrar</button>
+                    <button type="submit" name="submit" class="button-login">Registrar</button>
                     <div class="text">
                         <a href="./login.php" class="account">Já tenho uma conta!</a>
                     </div>
